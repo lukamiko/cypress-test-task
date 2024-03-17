@@ -1,9 +1,9 @@
-import {BasePage} from "./BasePage";
+import {BasePage} from "./BasePage"
 
 export class BlogPage extends BasePage {
 
     constructor() {
-        super('/resources')
+        super("/resources")
 
         this.url = super.getUrl()
     }

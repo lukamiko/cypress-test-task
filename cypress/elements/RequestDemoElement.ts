@@ -1,15 +1,15 @@
-import {BaseElement} from "./BaseElement";
+import {BaseElement} from "./BaseElement"
 
-export class RequestDemoElement extends BaseElement{
-    protected rootSelector = 'iframe[data-test-id="interactive-frame"]'
+export class RequestDemoElement extends BaseElement {
+    protected rootSelector = "iframe[data-test-id='interactive-frame']"
 
     protected static elements = {
-        emailInput_element: '[id="email-input"]',
-        firstNameInput_element: '[id="firstname-input"]',
-        lastNameInput_element: '[name="lastname"]',
-        companyNameInput_element: '[id="company-input"]',
-        jobTitleInput_element: '[id="jobtitle-input"]',
-        closeButton_element: '[id="interactive-close-button"]'
+        emailInput_element: "[id='email-input']",
+        firstNameInput_element: "[id='firstname-input']",
+        lastNameInput_element: "[name='lastname']",
+        companyNameInput_element: "[id='company-input']",
+        jobTitleInput_element: "[id='jobtitle-input']",
+        closeButton_element: "[id='interactive-close-button']"
     }
 
     private getRootModal() {
@@ -20,7 +20,7 @@ export class RequestDemoElement extends BaseElement{
         this.getRootModal()
             .within(() => {
                 cy.get(RequestDemoElement.elements.emailInput_element).click().type(email)
-        })
+            })
 
         return this
     }
