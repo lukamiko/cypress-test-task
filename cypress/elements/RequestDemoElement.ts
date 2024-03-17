@@ -21,6 +21,7 @@ export class RequestDemoElement extends BaseElement{
             .within(() => {
                 cy.get(RequestDemoElement.elements.emailInput_element).click().type(email)
         })
+
         return this
     }
 
@@ -29,6 +30,7 @@ export class RequestDemoElement extends BaseElement{
             .within(() => {
                 cy.get(RequestDemoElement.elements.firstNameInput_element).type(firstName)
             })
+
         return this
     }
 
@@ -37,6 +39,7 @@ export class RequestDemoElement extends BaseElement{
             .within(() => {
                 cy.get(RequestDemoElement.elements.lastNameInput_element).type(lastName)
             })
+
         return this
     }
 
@@ -45,6 +48,7 @@ export class RequestDemoElement extends BaseElement{
             .within(() => {
                 cy.get(RequestDemoElement.elements.companyNameInput_element).type(companyName)
             })
+
         return this
     }
 
@@ -53,6 +57,7 @@ export class RequestDemoElement extends BaseElement{
             .within(() => {
                 cy.get(RequestDemoElement.elements.jobTitleInput_element).type(jobTitle)
             })
+
         return this
     }
 
@@ -61,6 +66,7 @@ export class RequestDemoElement extends BaseElement{
             .within(() => {
                 cy.get(RequestDemoElement.elements.closeButton_element).click()
             })
+
         return this
     }
 }
